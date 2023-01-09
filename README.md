@@ -10,13 +10,9 @@ Where each one of the *task\*_\*.py* files is present in the **src** folder and 
 
 ## Execution
 
+A Dataproc single node cluster was used in the execution of each one of the python scripts in this repository. Therefore, the command used was the following 
 
+`spark-submit --master yarn --deploy-mode client task*_*.py`
 
-`spark-submit --master yarn --deploy-mode client --py-files utilities.py  task1_3.py`
+However, you can feel free and choose the option that best fits for you when trying it on your own.
 
-
-os.environ['PYSPARK_PYTHON'] = sys.executable
-os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
-
-
-corregir task2_1.py
